@@ -1,8 +1,7 @@
 # 🚀 Nirupam PM – Portfolio
 
 ## 👨‍💻 About Me
-Enthusiastic MCA graduate and Machine Learning intern skilled in **Python, Java, and Full-Stack Development (PERN stack)**.  
-Passionate about building **AI-driven and data-centric solutions** and contributing to scalable software systems.
+I am a recent MCA graduate and an aspiring Python Developer skilled in **Python, and Full-Stack Development (PERN stack)**, passionate about building efficient backend systems and intelligent applications. Currently focused on strengthening my expertise in Python development, backend technologies, and AI-driven solutions.
 
 ---
 
