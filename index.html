@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirupam | Python Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+body{
+background: linear-gradient(120deg,#050510,#0a0a1a);
+color:white;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background-image:radial-gradient(rgba(255,255,255,0.05) 1px,transparent 1px);
+background-size:3px 3px;
+pointer-events:none;
+}
+
+header{
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:700;
+font-size:22px;
+color:#00f7ff;
+text-shadow:0 0 10px #00f7ff;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#ddd;
+}
+
+nav a:hover{color:#00f7ff}
+
+.hero{
+padding:60px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:40px;
+}
+
+.hero-text h1{
+font-size:48px;
+background:linear-gradient(90deg,#00f7ff,#ffffff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:15px;
+}
+
+.hero-text p{color:#bbb;line-height:1.7;margin-bottom:30px}
+
+.btn{
+padding:12px 26px;
+border-radius:12px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+margin-right:15px;
+text-decoration:none;
+display:inline-block;
+}
+
+.btn-primary{
+background:#00f7ff;
+color:black;
+border:none;
+box-shadow:0 0 15px #00f7ff;
+}
+
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 25px #00f7ff}
+
+.btn-ghost{
+background:rgba(255,255,255,0.05);
+border:1px solid #00f7ff;
+color:#00f7ff;
+backdrop-filter:blur(10px);
+}
+
+.hero-img img{
+width:320px;
+border-radius:20px;
+border:2px solid rgba(255,255,255,0.2);
+box-shadow:0 0 40px rgba(0,247,255,0.3);
+}
+
+section{padding:70px 8%}
+
+.section-title{
+font-size:30px;
+margin-bottom:30px;
+color:#00f7ff;
+text-shadow:0 0 10px #00f7ff;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#00f7ff;
+box-shadow:0 0 20px rgba(0,247,255,0.3);
+}
+
+/* PROJECT CARDS */
+.project-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+border:1px solid rgba(255,255,255,0.2);
+}
+
+.project-card h3{margin-bottom:8px}
+
+.project-card p{font-size:14px;color:#bbb;margin-bottom:15px}
+
+footer{text-align:center;padding:30px;color:#aaa;font-size:14px}
+
+@media(max-width:900px){
+.hero{grid-template-columns:1fr;text-align:center}
+.hero-img{display:flex;justify-content:center}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Nirupam.dev</div>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Python Developer</h1>
+<p>
+Fresher Python Developer focused on backend development, automation, and AI-based solutions.
+</p>
+
+<a href="resume/Nirupam_Resume.pdf" class="btn btn-primary">Download Resume</a>
+<a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-ghost">LinkedIn</a>
+</div>
+
+<div class="hero-img">
+<img src="images/profile.jpg" alt="Profile Photo">
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<div class="card">
+MCA Graduate turned Python Developer passionate about backend systems, AI integrations and real-world software development.
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="card-grid">
+<div class="card">Python</div>
+<div class="card">Flask / FastAPI</div>
+<div class="card">SQL / PostgreSQL</div>
+<div class="card">REST APIs</div>
+<div class="card">Git & GitHub</div>
+<div class="card">Machine Learning Basics</div>
+</div>
+</section>
+
+<!-- PROJECT SECTION -->
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+<div class="card-grid">
+
+<div class="card project-card">
+<img src="projects/project1.jpg" alt="Project Image">
+<h3>PPE Detection System</h3>
+<p>YOLO based real-time PPE detection using Flask backend and live webcam processing.</p>
+<a href="#" class="btn btn-ghost">View Project</a>
+</div>
+
+<div class="card project-card">
+<img src="projects/project2.jpg" alt="Project Image">
+<h3>Event Planner PERN App</h3>
+<p>Full stack event planner with admin dashboard, JWT auth and PostgreSQL database.</p>
+<a href="#" class="btn btn-ghost">View Project</a>
+</div>
+
+</div>
+</section>
+
+<section id="experience">
+<h2 class="section-title">Experience</h2>
+<div class="card">
+<h3>Machine Learning Intern</h3>
+<p>Worked on ML models, detection systems and deployment basics.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="card">
+Email: yourmail@gmail.com
+</div>
+</section>
+
+<footer>
+© 2026 Nirupam | Python Developer
+</footer>
+
+</body>
+</html>
